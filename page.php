@@ -1,19 +1,38 @@
-<?php get_header()?> 
- 
-<!-- End Header -->
+<?php get_header(); ?> 
 
-		<section>
-			<div id="slides">	
-				<img src="<?php bloginfo('template_url'); ?>/images/threeccc.jpg" alt="Chicken Coops">
-				<img src="<?php bloginfo('template_url'); ?>/images/free-range-chickens.jpg" alt="Hen Chickens">
-				<img src="<?php bloginfo('template_url'); ?>/images/build-coop.jpg" alt="Build Your Own">
+<div id="container">
+
+
+<div id="main">
+				 
+ 
+	<div id="main"><!--open #main --> 
+				 
+				<?php if (have_posts()) :  while (have_posts()) : the_post(); ?>
+                        <div class="post-box">
+							<h2 id="post-<?php the_ID(); ?>"><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title(); ?>"><?php the_title(); ?></a></h2>
+							 <?php the_post_thumbnail(); ?>
+							<?php the_content('More &raquo;'); ?>
+							<?php edit_post_link('Edit.', '<p><small>', '</small></p>'); ?>
+                        </div>
+                    <?php endwhile; ?>
+                
+                         
+                
+                </div><!-- END CONTENT -->
+				
+               <?php else : ?> 
+							<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p> 
+				<?php endif; ?>
+ 	
+		</div>	
+
+			<div id="sidebar">
+			
+			<?php get_sidebar()?>;
+			
 			</div>
-			<h2><span>Chicken Coop Chateaus<span class='spacer'></span><span class='spacer'></span>Limitless Possibilities!</span></h2>						
-			<div class="feature-group adjustment">
-				<a href="products.html"><img src="<?php bloginfo('template_url'); ?>/images/chapel_styleccc.jpg" alt="Product Line" /></a>
-				<a href=""><img src="<?php bloginfo('template_url'); ?>/images/community.jpg" alt="Community" /></a>
-				<a href=""><img src="<?php bloginfo('template_url'); ?>/images/free-shipping.jpg" alt="Free Shipping" /></a>
-			</div>
-		</section>
-		
-<?php get_footer()?>
+</div>
+
+<?php get_footer(); ?>
+<?php wp_link_pages(); ?>
