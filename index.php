@@ -36,7 +36,8 @@
 			
 			<div id="sidebar">
 			
-			<?php get_sidebar()?>;
+			<?php dynamic_sidebar( 'primary' ); ?>
+		
 			
 			</div>
 		 
