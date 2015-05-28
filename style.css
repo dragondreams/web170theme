@@ -4,7 +4,23 @@ Author: Jan Talaro
 Description: Demo theme for W170 WP
 Version: 1.0
 */
+* {
+	padding: 0px;
+	margin: 0px;
+}
 
+
+div#wrapper {
+	width: 95%;
+	margin: 0 auto;
+}
+
+
+body {
+	margin: 0 auto 0 auto;
+	padding: 0 auto;
+	font-family: Arial, Calibri, sans-serif;
+} 
 
 
 
@@ -27,21 +43,11 @@ form#billing-form fieldset {
 	float:left;
 	width:460px;
 }
-* {
-	padding: 0px;
-	margin: 0px;
-}
 
-body {
-	margin: 0 auto 0 auto;
-	padding: 0 auto;
-	font-family: Arial, Calibri, sans-serif;
-}
 
-div#wrapper {
-	width: 960px;
-	margin: 0 auto;
-}
+
+
+
 header {
 	display:block;	
 	width:960px;
@@ -461,4 +467,24 @@ a img.aligncenter {
 	top: 5px;
 	width: auto;
 	z-index: 100000; /* Above WP toolbar. */
+}
+
+
+/*content and sidebar styling */
+
+#container {
+	width: 100%;
+	margin: 2em auto;
+}
+
+#sidebar {
+	width: 20%;
+	margin: 1em auto;
+	float: left;
+}
+
+#main {
+	width: 75%;
+	margin: 1em auto;
+	float: right;
 }
