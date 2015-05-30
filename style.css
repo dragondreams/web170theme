@@ -620,3 +620,15 @@ a img.aligncenter {
 	margin: 1em auto;
 	float: right;
 }
+
+#content {
+	width: 75%;
+	float: left;
+
+}
+
+#widget {
+	width: 20%;
+	float: right;
+}
+
