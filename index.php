@@ -3,7 +3,9 @@
 <!-- End Header -->
 
 		 <div id="container">
-		 
+			<div id="sidebar"> 
+				<?php dynamic_sidebar( 'primary' ); ?> 
+			</div>
 			
 		 
 		 
@@ -30,11 +32,14 @@
 						<?php else : ?> 
 							<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p> 
 						 <?php endif; ?>
+						 
+						 <div id="widget">
+							<?php dynamic_sidebar( 'secondary' ); ?> 
+						 
+						 </div>
 			 
 			</div>
-			<div id="sidebar"> 
-				<?php dynamic_sidebar( 'primary' ); ?> 
-			</div>
+			
 			 
 		 
 	</div>

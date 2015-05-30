@@ -1,7 +1,9 @@
 <?php get_header(); ?> 
 
 <div id="container">
-
+					<div id="sidebar"> 
+						<?php dynamic_sidebar( 'primary' ); ?> 
+					</div>
 
 <div id="main">
 				 
@@ -21,17 +23,17 @@
                 
                 </div><!-- END CONTENT -->
 				
-               <?php else : ?> 
+						<?php else : ?> 
 							<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p> 
-				<?php endif; ?>
+						<?php endif; ?>
+				
+				<div id="widget">
+					<?php dynamic_sidebar( 'secondary' ); ?>  
+				</div>
  	
 		</div>	
 
-			<div id="sidebar">
-			
-			<?php get_sidebar()?>;
-			
-			</div>
+			 
 </div>
 
 <?php get_footer(); ?>
