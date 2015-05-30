@@ -68,7 +68,7 @@ header img {
 	padding: 10px 15px;
 }
 
-#nav {
+/*#nav {
 	width: 540px; 
 	clear: both; 
 	margin: 2em auto;
@@ -81,7 +81,7 @@ header img {
 	/*font-size: 1.8em;
 	padding: 10px 15px 10px 15px; */
 	
-	ul {
+	/*ul {
     float: left;
     width: 100%;
     padding: 0;
@@ -124,7 +124,139 @@ ul#menu-main li {
 
 ul#menu-main {
   clear: both;
+}*/
+
+/*New navigation styles to include subnav */
+.navbar {
+    height: 40px;
+    background-color: black;
 }
+
+ul.topnav {
+    margin: 0;
+    padding: 0;
+}
+
+.subnav {
+    position: absolute;
+}
+
+.subnav-right {
+    right: 0;
+}
+
+ul.subnav {
+    position: relative;
+    margin: 4px 0 0 -8px;
+    padding: 0;
+    display: none;
+}
+
+ul.topnav  li{
+    list-style: none;
+    display: inline-block;
+    color: white;
+    padding: 4px 8px;
+    font-weight: bold;
+    line-height: 32px;
+    float: left;
+    clear: none;
+    box-sizing: border-box;
+}
+
+ul.subnav li {
+    background-color: red;
+    list-style: none;
+    display: inline-block;
+    color: white;
+    padding: 4px 8px;
+    font-weight: bold;
+    position: relative;
+    line-height: 32px;
+    float: left;
+    clear: none;
+    box-sizing: border-box;
+}
+
+.topnav li:hover {
+    background-color: red;
+}
+
+.topnav li:hover ul.subnav {
+    display: inline-block;
+    background-color: red;
+}
+
+.nav ul li:hover {
+    background-color: black;
+}
+
+.nav ul li {
+    width: 100%;
+}
+
+.nav li ul {
+    display: inline-block;
+    clear: none;
+    position: absolute;
+    background-color: red;
+    margin: 4px 0 0 -8px;
+    padding: 0;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+ ul.rightNav {
+        margin:0;
+        padding:0;
+        text-align: right;
+    }
+
+    .rightNav li:hover {
+        background-color: red;
+    }
+
+    ul.rightNav  li{
+        list-style: none;
+        display: inline-block;
+        color: white;
+        padding: 4px 8px;
+        font-weight: bold;
+        line-height: 32px;
+        position:relative;
+    }
+
+    ul.rightSubNav {
+        position: absolute;
+        right:0;
+        margin: 4px 0 0 -20px;
+        padding: 0;
+        display: none;
+        white-space:nowrap;
+    }
+    ul.rightSubNav li {
+        background-color: red;
+        list-style: none;
+        display: inline;
+        color: white;
+        padding: 4px 8px;
+        font-weight: bold;
+        position: relative;
+        line-height: 32px;
+    }
+
+    .rightNav li:hover ul.rightSubNav {
+        display: inline-block;
+        background-color: red;
+    }
+	
+	/*ends styling nav and subnav */
 
 #utility {
 	width: 380px;

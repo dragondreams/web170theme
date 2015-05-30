@@ -4,9 +4,7 @@
 
 		 <div id="container">
 		 
-			<div id="sidebar"> 
-				<?php dynamic_sidebar( 'primary' ); ?> 
-			</div>
+			
 		 
 		 
 			<div id="main"> 
@@ -34,7 +32,9 @@
 						 <?php endif; ?>
 			 
 			</div>
-			
+			<div id="sidebar"> 
+				<?php dynamic_sidebar( 'primary' ); ?> 
+			</div>
 			 
 		 
 	</div>

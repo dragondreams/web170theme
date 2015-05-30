@@ -34,17 +34,12 @@
 				Chicken Coop Chateaus test
 			</div>
 			
-		<div id="nav">
-		<?php wp_nav_menu( array('main-menu' => 'Main Menu' )); ?>	
+		<div class="navbar">
+			<ul class="topnav left">
+				<?php wp_nav_menu( array('main-menu' => 'Main Menu' )); ?>
+			</ul>
 		</div>
-			<!--<nav>
-				<ul>
-					<li><a href="">About</a></li>
-					<li><a href="products.html">Products</a></li>
-					<li><a href="">Support</a></li>
-					<li><a href="">Contact</a></li>
-				</ul>
-			</nav>	-->
+			 
 		</header>
 <!-- End Header -->
  
