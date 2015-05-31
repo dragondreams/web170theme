@@ -1,14 +1,18 @@
 <?php if ( ! dynamic_sidebar() ) : ?>
-	<li>{static sidebar item 1}</li>
-	<li>{static sidebar item 2}</li>
-	<li>{static sidebar item 1}</li>
-	<li>{static sidebar item 2}</li>
-	<li>{static sidebar item 1}</li>
-	<li>{static sidebar item 2}</li>
-	<li>{static sidebar item 1}</li>
-	<li>{static sidebar item 2}</li>
-	<li>{static sidebar item 1}</li>
-	<li>{static sidebar item 2}</li><li>{static sidebar item 1}</li>
-	<li>{static sidebar item 2}</li><li>{static sidebar item 1}</li>
-	<li>{static sidebar item 2}</li>
+	<?php if ( is_active_sidebar( 'primary' ) ) : ?>
+
+		<?php dynamic_sidebar( 'primary' ); ?>
+
+	<?php else : ?>
+
+     <h3>Location</h3>
+        <p>123 45th Avenue South<br/>
+        Seattle, WA 98765</p>
+        <p>(206) 555-1234</p>
+
+      <h3>Hours</h3>
+        <p>9:00 AM – 6:00 PM weekdays</p>
+        <p>Magna aliquam erat volutpat malesuada ac purus.</p>
+
+	<?php endif; ?>
 <?php endif; ?>
