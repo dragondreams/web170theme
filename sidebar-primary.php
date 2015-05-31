@@ -1,14 +1,7 @@
 <?php if ( ! dynamic_sidebar() ) : ?>
-	<li>{static sidebar item 1}</li>
-	<li>{static sidebar item 2}</li>
-	<li>{static sidebar item 1}</li>
-	<li>{static sidebar item 2}</li>
-	<li>{static sidebar item 1}</li>
-	<li>{static sidebar item 2}</li>
-	<li>{static sidebar item 1}</li>
-	<li>{static sidebar item 2}</li>
-	<li>{static sidebar item 1}</li>
-	<li>{static sidebar item 2}</li><li>{static sidebar item 1}</li>
-	<li>{static sidebar item 2}</li><li>{static sidebar item 1}</li>
-	<li>{static sidebar item 2}</li>
+	<ul>
+	  <?php
+	  wp_list_pages('title_li=&child_of='.$post->ID.'&show_date=modified
+	  &date_format=$date_format'); ?>
+  </ul>
 <?php endif; ?>
