@@ -611,13 +611,13 @@ a img.aligncenter {
 
 #sidebar {
 	width: 20%;
-	margin: 1em auto;
+	margin: 3em auto;
 	float: left;
 }
 
 #main {
 	width: 75%;
-	margin: 1em auto;
+	margin: 3em auto;
 	float: right;
 }
 
