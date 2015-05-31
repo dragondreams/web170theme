@@ -13,7 +13,7 @@
 			 
 		 
 						 <?php if ( have_posts() ): while ( have_posts() ) : the_post(); ?> 
-						 <h4 id="post-<?php the_ID(); ?>"><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title(); ?>"><?php the_title(); ?></a></h4>
+						  <h3 id="post-<?php the_ID(); ?>"><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title(); ?>"><?php the_title(); ?></a></h3>
 						<small><?php the_time('F jS, Y'); ?> by <?php the_author_posts_link(); ?></small><p class="postmetadata"><?php _e( 'Posted in' ); ?> <?php the_category( ', ' ); ?></p>
 									 
 					<div class="post-box">

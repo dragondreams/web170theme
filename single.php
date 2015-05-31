@@ -13,7 +13,7 @@
 			 
 		 
 						 <?php if ( have_posts() ): while ( have_posts() ) : the_post(); ?> 
-						 <h4 id="post-<?php the_ID(); ?>"><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title(); ?>"><?php the_title(); ?></a></h4>
+						 <h2 id="post-<?php the_ID(); ?>"><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title(); ?>"><?php the_title(); ?></a></h2>
 						 
 									 
 					<div class="post-box">
