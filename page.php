@@ -18,7 +18,7 @@
                     <?php endwhile; ?>  
              </div><!-- END CONTENT --> 
 						<?php else : ?> 
-							<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p> 
+							<p><?php _e( 'Sorry, no page matched your criteria.' ); ?></p> 
 						<?php endif; ?>
 				
 				<div id="widget">
@@ -28,4 +28,4 @@
 </div>
 
 <?php get_footer(); ?>
-<?php wp_link_pages(); ?>
+<!--<?php wp_link_pages(); ?>--/
