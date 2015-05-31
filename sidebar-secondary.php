@@ -1,7 +1,7 @@
 <?php if ( ! dynamic_sidebar() ) : ?>
-	<?php if ( is_active_sidebar( 'primary' ) ) : ?>
+	<?php if ( is_active_sidebar( 'secondary' ) ) : ?>
 
-		<?php dynamic_sidebar( 'primary' ); ?>
+		<?php dynamic_sidebar( 'secondary' ); ?>
 
 	<?php else : ?>
 
