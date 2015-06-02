@@ -5,7 +5,7 @@
 		<?php dynamic_sidebar( 'primary' ); ?>
 
 	<?php else : ?>
-
+			<?php wp_list_categories(); ?> 
      <h3>Location</h3>
         <p>123 45th Avenue South<br/>
         Seattle, WA 98765</p>
