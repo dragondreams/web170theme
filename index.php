@@ -2,12 +2,12 @@
  
 <!-- End Header -->
 
-		 <div id="container">
+<div id="container">
 			<div id="sidebar"> 
 				<?php dynamic_sidebar( 'primary' ); ?> 
 			</div>
-			
-		 
+			<h2 id="post-<?php the_ID(); ?>"><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title(); ?>"><?php the_title(); ?></a></h2>
+		 <div id="main"> 
 			<div id="content"><!--open #main --> 
 			 <!-- Start the Loop. -->
 			 
@@ -44,5 +44,5 @@
 			 
 			</div>
 			 
-		
+</div>		
 <?php get_footer()?>
