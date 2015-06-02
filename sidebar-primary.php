@@ -1,8 +1,4 @@
-<?php if ( ! dynamic_sidebar() ) : ?>
-	
-	
-	 
-  
+<?php if ( ! dynamic_sidebar() ) : ?> 
   
   <?php if ( is_active_sidebar( 'primary' ) ) : ?>
 
@@ -19,5 +15,5 @@
         <p>9:00 AM – 6:00 PM weekdays</p>
         <p>Magna aliquam erat volutpat malesuada ac purus.</p>
 
-	<?php endif; ?>
+	 
 <?php endif; ?>
