@@ -2,18 +2,19 @@
  
 <!-- End Header -->
 
-		 <div id="container">
+<div id="container">
 			<div id="sidebar"> 
 				<?php dynamic_sidebar( 'primary' ); ?> 
 			</div>
-			
-		 
+			<h2 id="post-<?php the_ID(); ?>"><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title(); ?>"><?php the_title(); ?></a></h2>
+		 <div id="main"> 
 			<div id="content"><!--open #main --> 
 			 <!-- Start the Loop. -->
 			 
 		 
 						 <?php if ( have_posts() ): while ( have_posts() ) : the_post(); ?> 
-						 <h2 id="post-<?php the_ID(); ?>"><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title(); ?>"><?php the_title(); ?></a></h2>
+						 <h3 id="post-<?php the_ID(); ?>"><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title(); ?>"><?php the_title(); ?></a></h3>
+						<small><?php the_time('F jS, Y'); ?> by <?php the_author_posts_link(); ?></small><p class="postmetadata"><?php _e( 'Posted in' ); ?> <?php the_category( ', ' ); ?></p>
 						 
 									 
 					<div class="post-box">
@@ -31,15 +32,15 @@
                
 						 
 						 
-						 <?php comments_template(); ?>
+				 <?php comments_template(); ?>
 						 
 						 
-						 <div id="widget">
-							<?php dynamic_sidebar( 'secondary' ); ?> 
+			<div id="widget">
+				<?php dynamic_sidebar( 'secondary' ); ?> 
 						 
-						 </div>
-			 
 			</div>
 			 
+			</div>
+</div>		 
 		
 <?php get_footer()?>
