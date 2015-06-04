@@ -4,6 +4,7 @@
 
 		<section>
 			
+			 
 			<?php echo do_shortcode("[huge_it_slider id='1']"); ?>
 			
 			<div id="slides">	
