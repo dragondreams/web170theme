@@ -3,6 +3,9 @@
 <!-- End Header -->
 
 		<section>
+			
+			<?php echo do_shortcode("[huge_it_slider id='1']"); ?>
+			
 			<div id="slides">	
 				<img src="<?php bloginfo('template_url'); ?>/images/threeccc.jpg" alt="Chicken Coops">
 				<img src="<?php bloginfo('template_url'); ?>/images/free-range-chickens.jpg" alt="Hen Chickens">
