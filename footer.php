@@ -28,6 +28,7 @@
 		  });
 		});
 	</script>
+	<?php wp_footer(); ?>
 <!-- End Scripts -->
 </body>
 </html>
