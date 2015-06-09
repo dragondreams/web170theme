@@ -3,6 +3,8 @@
   <?php if ( is_active_sidebar( 'primary' ) ) : ?>
 
 		<?php dynamic_sidebar( 'primary' ); ?>
+		
+	
 
 	<?php else : ?>
 			<ul>
@@ -16,6 +18,15 @@
       <h3>Hours</h3>
         <p>9:00 AM – 6:00 PM weekdays</p>
         <p>Magna aliquam erat volutpat malesuada ac purus.</p>
-
+	
+	
 	 
 <?php endif; ?>
+
+<!--Begin Quote-->
+	<?php if ( get_post_meta($post->ID, 'Quote', true)):?>
+		
+	
+<?php endif; ?>
+<!--end quote-->
+	
